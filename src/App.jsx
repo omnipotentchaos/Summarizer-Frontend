@@ -28,11 +28,15 @@ function App() {
     formData.append('document', file);
 
     try {
-      const response = await fetch('http://139.59.2.42:3000/api/synthesize', {
-  method: 'POST',
-  body: formData,
-}
-);
+      // 1. Use your new HTTPS Ngrok URL here instead of the raw IP
+      const response = await fetch('https://c886-139-59-2-42.ngrok-free.app/api/synthesize', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          // 2. Add this header to bypass the Ngrok warning screen
+          'ngrok-skip-browser-warning': 'true' 
+        }
+      });
 
       if (!response.ok) {
         throw new Error("Server failed to generate podcast.");
