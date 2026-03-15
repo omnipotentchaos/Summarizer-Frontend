@@ -29,7 +29,7 @@ function App() {
 
     try {
       // 1. Use your new HTTPS Ngrok URL here instead of the raw IP
-      const response = await fetch('https://c886-139-59-2-42.ngrok-free.app/api/synthesize', {
+      const response = await fetch('https://8b58-139-59-2-42.ngrok-free.app/api/synthesize', {
         method: 'POST',
         body: formData,
         headers: {
