@@ -82,7 +82,7 @@ function App() {
               Engine: HuggingFace
             </span>
             <span className="px-2 py-1 bg-slate-900/80 text-emerald-400 text-xs rounded border border-slate-700 font-mono shadow-sm">
-              Model: BART-large-cnn
+              Model: Falconsai/text_summarization
             </span>
             <span className="px-2 py-1 bg-slate-900/80 text-purple-400 text-xs rounded border border-slate-700 font-mono shadow-sm">
               Voice: ElevenLabs TTS
