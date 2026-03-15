@@ -28,13 +28,11 @@ function App() {
     formData.append('document', file);
 
     try {
-      const response = await fetch('https://keren-uncircuitous-irreparably.ngrok-free.dev/api/synthesize', {
-        method: 'POST',
-        body: formData,
-        headers:{
-          'ngrok-skip-browser-warning': 'true'
-        }
-      });
+      const response = await fetch('http://139.59.2.42:3000/api/synthesize', {
+  method: 'POST',
+  body: formData,
+}
+);
 
       if (!response.ok) {
         throw new Error("Server failed to generate podcast.");
